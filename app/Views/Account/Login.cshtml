@@ -1,0 +1,16 @@
+﻿@model app.Models.LoginViewModel
+
+
+<form asp-action="Login" asp-controller="Account" method="post">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="Username" required>
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="Password" required>
+    <br>
+    <input type="checkbox" id="rememberMe" name="RememberMe">
+    <label for="rememberMe">Remember me</label>
+    <br>
+    <button type="submit">Login</button>
+</form>
+
